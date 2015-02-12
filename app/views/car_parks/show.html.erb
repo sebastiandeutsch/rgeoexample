@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @car_park.name %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @car_park.street %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @car_park.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @car_park.city %>
+</p>
+
+<p>
+  <strong>Coordinates:</strong>
+  <%= @car_park.lonlat %>
+</p>
+
+
+<%= link_to 'Edit', edit_car_park_path(@car_park) %> |
+<%= link_to 'Back', car_parks_path %>

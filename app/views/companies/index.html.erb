@@ -1,0 +1,11 @@
+Ohai
+
+<ul>
+  <% @companies.each do |company| %>
+    <li>
+      <%= company.name %>
+      <%= link_to 'edit', edit_company_path(company) %>
+      <%= link_to 'delete', company_path(company), method: :delete, :'data-confirm' => "Echt?" %>
+    </li>
+  <% end %>
+</ul>
